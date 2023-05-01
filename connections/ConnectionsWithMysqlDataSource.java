@@ -9,8 +9,8 @@ import java.sql.Statement;
 
 public class ConnectionsWithMysqlDataSource {
     private static final String database = "jdbc_exercises";
-    private static final String username = "root";
-    private static final String password = "123456";
+    private static final String username = "set_your_own_username";
+    private static final String password = "set_your_own_password";
 
     public static void main(String[] args) throws SQLException {
         // new object of type MysqlDataSource created
