@@ -2,10 +2,7 @@ package JDBC.connections;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class ConnectionsWithMysqlDataSource {
     private static final String database = "jdbc_exercises";
@@ -39,9 +36,15 @@ public class ConnectionsWithMysqlDataSource {
             System.out.println("Student id = " + id + ",   Student name = " + studentName + "    School id = " + id2 + ",   School name = " + schoolName);
         }
 
-        rs.close();
-        statement.close();
-        connection.close();
+        // closing connection
+        try {
+            rs.close();
+            statement.close();
+            connection.close();
+        } catch (SQLTimeoutException e) {
+            throw new SQLTimeoutException();
+        }
+
 
     }
 }
