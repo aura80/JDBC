@@ -63,7 +63,7 @@ public class QueryExecutionAndMapping {
 
         System.out.println("----------------------------------------------");
 
-//        must be renewed its arguments at every new run
+//        must be renewed, change its arguments at every new run
 
 //        MethodsForConnection.insertInTable(tableName, "Ica", "0735418725");
 //        MethodsForConnection.insertInTable(tableName, "Zora", "0745687123");
