@@ -37,9 +37,3 @@ select * from student inner join school on school.id_student=student.id_student;
 select * from student left join school on school.id_student=student.id_student;
 
 select * from student right join school on school.id_student=student.id_student;
-
-
-
-
-
-
