@@ -22,13 +22,13 @@ create table school (
 describe schools;
 
 insert into student(student_name, phone) values ("Gica", "0722745896"), ("Aurel","0724561146"), ("Costel","0789145236"),
-("Mihaita","0247265148"), ("Anatol","0554799145"), ("Azorel","0245689745");
+                                                ("Mihaita","0247265148"), ("Anatol","0554799145"), ("Azorel","0245689745");
                                                 
 select * from student;
 
 insert into school(id_school, school_name, id_student) values (22, "Liceul Mihai Viteazu", 4),(28, "Ana Aslan", 3),
-(15, "I.L. Caragiale", 2),(8, "Aurel Vlaicu", 5),
-(32, "Titu Maiorescu", 1),(20, "I.L. Caragiale" , 6);
+                                                              (15, "I.L. Caragiale", 2),(8, "Aurel Vlaicu", 5),
+                                                              (32, "Titu Maiorescu", 1),(20, "I.L. Caragiale" , 6);
 
 select * from school;
 
