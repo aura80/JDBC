@@ -5,7 +5,7 @@ create database jdbc_exercises;
 use jdbc_exercises;
 
 create table student (
-	id_student int not null auto_increment primary key,
+    id_student int not null auto_increment primary key,
     student_name varchar(150) not null unique,
     phone varchar(10) not null
 );
@@ -13,7 +13,7 @@ create table student (
 describe student;
 
 create table school (
-	id_school int not null primary key,
+    id_school int not null primary key,
     school_name varchar(50),
     id_student int,
     CONSTRAINT kf_schools_students FOREIGN KEY (id_student) REFERENCES student(id_student)
